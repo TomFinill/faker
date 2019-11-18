@@ -5,8 +5,7 @@ SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
 SimpleCov.start do
   add_filter ['.bundle', 'lib/extensions', 'test']
 end
-
-require 'test/support/assert_not_english'
+require File.expand_path(File.dirname(__FILE__) + '/support/assert_not_english')
 require 'minitest/autorun'
 require 'test/unit'
 require 'rubygems'
